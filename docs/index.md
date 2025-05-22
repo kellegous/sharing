@@ -3,4 +3,4 @@ title: Sharing Notes
 layout: default
 ---
 
-# Random notes that I share with folks
+[My Local LLM Setup](./local-ai-setup)
