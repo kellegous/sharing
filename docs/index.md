@@ -1,8 +1,6 @@
 ---
-title: Welcome
+title: Sharing Notes
 layout: default
 ---
 
-# Hello, world!
-
-This is my GitHub Pages site.
+# Random notes that I share with folks
