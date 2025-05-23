@@ -41,7 +41,7 @@ ollama run gemma3:12b
 
 ## 4. Install Ollamac
 
-I've tried a few different UIs. There is a nice web client called [Open WebUI](https://openwebui.com/). It's very good and it includes a lot of features. It's also well designed for an open source project. But I like a simple native app so I use [Ollamac](https://github.com/kevinhermawan/Ollamac). It looks like this,
+I've tried a few different UIs. There is a nice web client called [Open WebUI](https://openwebui.com/). It's very good and it includes a lot of features. I've added a section below describing how I run it in docker. I like a simple native app so I use [Ollamac](https://github.com/kevinhermawan/Ollamac). It looks like this,
 
 ![Ollamac](./ollamac.png)
 
@@ -52,5 +52,17 @@ brew install --cask ollamac
 ```
 
 That will install it in `/Applications`. If I remember correctly, it checks for a local ollama server, so it should be ready to go when you start it. If it isn't, for some reason, your ollama server is running locally at `http://localhost:11434`. Pro-tip: That ollama server also has a nice set of APIs you can use for your own local coding projects.
+
+## 5. Install Open WebUI (optional)
+
+I like using Ollamac mostly because it's a native app and switching to it is easy. However, the web UI Open WebUI has a better and more feature rich expeicne than Ollamac. If you want to give that a try, here's a docker command as a starting point. I run this docker command in the foreground just because I already have a tab in kitty dedicated to local tools. Adjust the commmand to your own tastes.
+
+```bash
+docker run -ti --rm -p 9000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main
+```
+
+If you use this command, it will start a local server at `http://localhost:9000`. Here's what it looks like,
+
+![Open WebUI](./open-webui.png)
 
 That's it! I like this little setup. It's simple and it works well.
