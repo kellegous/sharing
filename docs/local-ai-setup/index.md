@@ -29,7 +29,7 @@ Now we can download the model.
 ollama pull gemma3:12b
 ```
 
-This is going to take a while as the model is about 8.1GB. It will display a progress bar as it downloads. I should also note that if you want to see the models that you have downloaded, you can use the `ollama list` command. There are also commands for removing models, which is useful since they are quite large.
+This is going to take a while as the model is about 8.1GB. It will display a progress bar as it downloads. I should also note that if you want to see the models that you have downloaded, you can use the `ollama list` command. There are also commands for removing models, which is useful since they are quite large. Since my laptop is an M1 Max with 64G of unified memory, [gemma3:27b](https://ollama.com/library/gemma3:27b) is also usable and I have it installed and use it from time to time if I need to warm up my lap.
 
 ## 3. Running a model
 
