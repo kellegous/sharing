@@ -58,7 +58,12 @@ That will install it in `/Applications`. If I remember correctly, it checks for 
 I like using Ollamac mostly because it's a native app and switching to it is easy. However, the web UI Open WebUI has a better and more feature rich expeicne than Ollamac. If you want to give that a try, here's a docker command as a starting point. I run this docker command in the foreground just because I already have a tab in kitty dedicated to local tools. Adjust the commmand to your own tastes.
 
 ```bash
-docker run -ti --rm -p 9000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main
+docker run -ti --rm -p 9000:8080 \
+	-e WEBUI_AUTH=False \
+	--add-host=host.docker.internal:host-gateway \
+	-v open-webui:/app/backend/data \
+	--name open-webui \
+	ghcr.io/open-webui/open-webui:main
 ```
 
 If you use this command, it will start a local server at `http://localhost:9000`. Here's what it looks like,
