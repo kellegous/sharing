@@ -26,7 +26,7 @@ Change your system's color scheme from dark to light and back again (or you can 
 
 ## Seems the answer is Yes!
 
-## css
+## CSS
 
 ```css
 background-image: url("./favorite.svg");
@@ -39,7 +39,9 @@ background-color: #eee;
 }
 ```
 
-```svg
+## SVG
+
+```xml
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
 	<style>
 		.ink { fill: #333; }
