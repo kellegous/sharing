@@ -11,6 +11,7 @@ title: Do SVG's w/ media queries work as background images?
 		background-repeat: no-repeat;
 		background-position: center;
 		background-color: #eee;
+		margin: 50px 0;
 		@media (prefers-color-scheme: dark) {
 			background-color: #333;
 		}
@@ -22,7 +23,8 @@ title: Do SVG's w/ media queries work as background images?
 <div class="canvas">
 </div>
 
-Change your system's color scheme from dark to light and back again (or you can do the same thing in your browser's dev tools).
+Change your system's color scheme from dark to light and back again (or you can do the same thing in your browser's dev tools). Conveniently, this also works for SVG favicons (except for Safari,
+but Safari is the new Internet Explorer 6 and you'll end up with many fallbacks to make it work properly).
 
 ## Seems the answer is Yes!
 
